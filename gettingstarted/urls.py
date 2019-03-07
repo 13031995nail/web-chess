@@ -15,6 +15,6 @@ import hello.views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path('start', hello.views.index1, name='index1'),
-    path('', hello.views.index, name="index"),
+    re_path('^([\w]+)$', hello.views.index1, name='index1'),
+    re_path('^$', hello.views.index, name="index"),
 ]
