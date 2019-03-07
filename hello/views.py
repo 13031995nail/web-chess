@@ -72,7 +72,7 @@ def netPredict(first, second):
     toEval = [[x_1,x_2]]
     with tf.Session() as sess:
         sess.run(init_op)
-        saver.restore(sess, 'hello/net/model_epoch-2')
+        saver.restore(sess, 'hello/net/model_epoch-53')
         result = sess.run(y, feed_dict={x: toEval})
 
     if result[0][0] > result [0][1]:
