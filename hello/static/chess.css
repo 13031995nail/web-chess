@@ -2,6 +2,7 @@
     border:20px solid;
     width:640px;
     height:640px;
+	margin: 0 auto;
 }
 .square{
     width:80px;
