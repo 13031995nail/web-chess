@@ -3,14 +3,13 @@
     width:640px;
     height:640px;
 }
-
 #container {
     display: flex; 
 	flex-direction:row;
 }
 
 #container #knopka{
-  margin:20px;
+	margin:20px;
 }
 
 input{
