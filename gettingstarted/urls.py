@@ -16,6 +16,7 @@ import hello.views
 
 urlpatterns = [
     re_path('^newgame$', hello.views.new_game, name='newgame'),
-    re_path('^/([\w]+)$', hello.views.move, name='move'),
+    re_path('^net$', hello.views.move, name='net'),
+    re_path('^([\w]+)$', hello.views.move, name='move'),
     re_path('^$', hello.views.index, name="index"),
 ]
