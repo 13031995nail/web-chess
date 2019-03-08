@@ -33,7 +33,7 @@ function SetDropSymbol(){
             var frCoord = ui.draggable.attr('id').substring(1);
             var toCoord = this.id.substring(1);
             moveFigure(frCoord, toCoord);
-			progress(frCoord, toCoord);
+			move_player(frCoord, toCoord);
            }
         });
 }
@@ -106,7 +106,7 @@ function isBlackSquare(coord){
     return (coord % 8 + Math.floor(coord/8)) % 2
 }
 
-function move_net(position1, position2){
+function move_player(position1, position2){
     start = arr[position1%8]+(8-(Math.floor(position1/8)));
     end = arr[position2%8]+(8-(Math.floor(position2/8)));
 	document.location.href = "https://web-chess-net.herokuapp.com/" + start + end;
