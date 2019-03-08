@@ -23,8 +23,6 @@ def new_game(request):
     return render(request, "index.html", {'board': 'rnbqkbnrpppppppp11111111111111111111111111111111PPPPPPPPRNBQKBNR'})
 
 def move(request, move):
-    HttpResponse(move)
-
     board = chess.Board()
 
     with open("hello/moves.json", "r") as read_file:

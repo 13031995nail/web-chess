@@ -15,7 +15,7 @@ import hello.views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    re_path('^newgame$', hello.views.new_game, name='new_game'),
+    re_path('^newgame$', hello.views.new_game, name='newgame'),
     re_path('^([\w]+)$', hello.views.move, name='move'),
     re_path('^$', hello.views.index, name="index"),
 ]
