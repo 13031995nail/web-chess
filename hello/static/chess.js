@@ -106,11 +106,16 @@ function isBlackSquare(coord){
     return (coord % 8 + Math.floor(coord/8)) % 2
 }
 
-function progress(position1, position2){
+function move_net(position1, position2){
     start = arr[position1%8]+(8-(Math.floor(position1/8)));
     end = arr[position2%8]+(8-(Math.floor(position2/8)));
 	document.location.href = "https://web-chess-net.herokuapp.com/" + start + end;
 }
+
 function start_game(){
-	document.location.href = "https://web-chess-net.herokuapp.com/start";
+	document.location.href = "https://web-chess-net.herokuapp.com/move_net";
+}
+
+function new_game(){
+	document.location.href = "https://web-chess-net.herokuapp.com/new_game";
 }

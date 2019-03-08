@@ -13,7 +13,16 @@ import json
 def index(request):
     return render(request, "index.html", {'board': 'rnbqkbnrpppppppp11111111111111111111111111111111PPPPPPPPRNBQKBNR'})
 
-def index1(request, move):
+def new_game(request):
+    data = {
+        "moves": [],
+        "moveTotal": 0
+    }
+    with open("hello/moves.json", "w") as write_file:
+        json.dump(data, write_file)
+    return render(request, "index.html", {'board': 'rnbqkbnrpppppppp11111111111111111111111111111111PPPPPPPPRNBQKBNR'})
+
+def move(request, move):
     HttpResponse(move)
 
     board = chess.Board()

@@ -8,11 +8,14 @@
 	flex-direction:row;
 }
 
-#container #knopka{
+#knopka{
 	margin:20px;
+	display: flex; 
+	flex-direction:column;
 }
 
 input{
+	margin:20px;
 	widows:300px;
 	height:50px;
 }
