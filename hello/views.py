@@ -11,7 +11,7 @@ import math
 import json
 
 def index(request):
-	data = {
+    data = {
         "moves": [],
         "moveTotal": 0
     }
