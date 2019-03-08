@@ -11,6 +11,12 @@ import math
 import json
 
 def index(request):
+	data = {
+        "moves": [],
+        "moveTotal": 0
+    }
+    with open("hello/moves.json", "w") as write_file:
+        json.dump(data, write_file)
     return render(request, "index.html", {'board': 'rnbqkbnrpppppppp11111111111111111111111111111111PPPPPPPPRNBQKBNR'})
 
 def new_game(request):
