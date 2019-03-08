@@ -113,7 +113,7 @@ function move_player(position1, position2){
 }
 
 function move_net(){
-	document.location.href = "https://web-chess-net.herokuapp.com/movenet";
+	document.location.href = "https://web-chess-net.herokuapp.com/net";
 }
 
 function new_game(){
